@@ -1,35 +1,19 @@
 <template>
   <div>
-    <button @click="dec">-</button>
-    <span>count is {{ count }}</span>
-    <button @click="inc">+++</button>
+    <app-navbar></app-navbar>
+    <app-header></app-header>
+    <router-view></router-view>
   </div>
-
 </template>
 
 <script>
+  import AppNavbar from './components/Navbar';
+  import AppHeader from './components/Header';
+
   export default {
-    data() {
-      return {
-        count: 5,
-      };
-    },
-    methods: {
-      inc() { this.count+=100 },
-      dec() { this.count-- },
-    },
+    components: { AppNavbar, AppHeader },
   };
 </script>
 
 <style scoped lang="scss">
-  span {
-    display: inline-block;
-    color: red;
-    transition: transform 1s ease-in-out;
-
-    &:hover {
-      color: blue;
-      transform: scale(2);
-    }
-  }
 </style>
