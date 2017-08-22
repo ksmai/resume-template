@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Hello from './components/Hello';
-import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
+import Hello from './components/hello/Hello';
+import Resume from './components/resume/Resume';
+import Portfolio from './components/portfolio/Portfolio';
 
 Vue.use(Router);
 
