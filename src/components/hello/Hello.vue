@@ -1,6 +1,5 @@
-<template>
-  <div>Hello Component
-  </div>
+<template lang="pug">
+  div Hello Component
 </template>
 
 <script>

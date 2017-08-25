@@ -1,7 +1,5 @@
-<template>
-  <p class="profile">
-    {{profile}}
-  </p>
+<template lang="pug">
+  p.profile {{profile}}
 </template>
 
 <script>

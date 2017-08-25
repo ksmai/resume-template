@@ -1,5 +1,5 @@
-<template>
-  <div>{{projects}}</div>
+<template lang="pug">
+  div {{projects}}
 </template>
 
 <script>

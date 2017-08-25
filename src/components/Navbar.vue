@@ -1,12 +1,10 @@
-<template>
-  <nav class="nav">
-    <router-link
+<template lang="pug">
+  nav.nav
+    router-link.link(
       v-for="link in links"
       :to="`/${link}`"
       :key="link"
-      class="link"
-    >{{link}}</router-link>
-  </nav>
+    ) {{link}}
 </template>
 
 <script>

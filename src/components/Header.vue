@@ -1,12 +1,9 @@
-<template>
-  <header class="header">
-    <div class="info">
-      <h1 class="name">{{name}}</h1>
-      <h2 class="title">{{title}}</h2>
-    </div>
-
-    <img :src="avatar" :alt="name" class="avatar">
-  </header>
+<template lang="pug">
+  header.header
+    .info
+      h1.name {{name}}
+      h2.title {{title}}
+    img.avatar(:src="avatar" :alt="name")
 </template>
 
 <script>

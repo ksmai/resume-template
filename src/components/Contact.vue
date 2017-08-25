@@ -1,12 +1,9 @@
-<template>
-  <ul class="list">
-    <li v-for="link in links" class="item">
-      <a href="#" class="link">
-        <i class="icon fa fa-2x" :class="'fa-' + link.icon"></i>
-      </a>
-      <span class="url">{{link.url}}</span>
-    </li>
-  </ul>
+<template lang="pug">
+  ul.list
+    li.item(v-for="link in links")
+      a.link(href="#")
+        i.icon.fa.fa-2x(:class="'fa-' + link.icon")
+      span.url {{link.url}}
 </template>
 
 <script>

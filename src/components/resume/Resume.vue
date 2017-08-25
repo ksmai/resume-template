@@ -1,7 +1,6 @@
-<template>
-  <section class="resume">
-    <resume-profile></resume-profile>
-  </section>
+<template lang="pug">
+  section.resume
+    resume-profile
 </template>
 
 <script>
