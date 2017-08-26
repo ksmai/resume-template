@@ -11,6 +11,7 @@ const routes = [
   { path: '/hello', component: Hello },
   { path: '/resume', component: Resume },
   { path: '/portfolio', component: Portfolio },
+  { path: '*', redirect: '/resume' },
 ];
 
 export default new Router({ routes, mode: 'history' });
