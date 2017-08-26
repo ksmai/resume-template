@@ -4,6 +4,7 @@
     <app-header></app-header>
     <router-view class="main"></router-view>
     <app-contact></app-contact>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -11,9 +12,10 @@
   import AppNavbar from './components/Navbar';
   import AppHeader from './components/Header';
   import AppContact from './components/Contact';
+  import AppFooter from './components/Footer';
 
   export default {
-    components: { AppNavbar, AppHeader, AppContact },
+    components: { AppNavbar, AppHeader, AppContact, AppFooter },
   };
 </script>
 
