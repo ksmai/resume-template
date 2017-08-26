@@ -75,7 +75,7 @@
   .value {
     border-bottom: 1px solid rgba(0, 0, 0, .12);
     margin-bottom: 8px;
-    width: 150px;
+    width: calc(100% - 130px);
     display: inline-block;
   }
   .skill {
@@ -85,7 +85,7 @@
   }
   .progress {
     display: inline-block;
-    width: 150px;
+    width: calc(100% - 130px);
     background-color: #eee;
     height: 12px;
     vertical-align: middle;
@@ -111,5 +111,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .info {
+      padding: 16px 32px;
+    }
   }
 </style>

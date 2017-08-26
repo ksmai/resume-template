@@ -18,4 +18,10 @@
     color: #fff;
     padding: 44px 88px;
   }
+
+  @media (max-width: 768px) {
+    .profile {
+      padding: 32px;
+    }
+  }
 </style>
