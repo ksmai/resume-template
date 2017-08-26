@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 8px;
   }
   .link {
     background-color: #0089cd;
@@ -56,5 +57,14 @@
   .icon {
     color: #fff;
     text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .list {
+      flex-direction: column;
+    }
+    .item {
+      margin: 8px 0;
+    }
   }
 </style>
